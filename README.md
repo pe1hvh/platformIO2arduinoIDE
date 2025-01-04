@@ -30,10 +30,9 @@ Converting
 ----------
 - All the .cpp and .h files will be placed in the git repo special for the ArduinoIDE.
 - .cpp files are renamed to .ino files 
-- main.cpp will be renamed to <projectName>.ino file.
-- delete compiler preprocessor directives
-- delete some unnessary include statements in ino files other than main.ino
-
+- main.cpp will be renamed to "projectName".ino file.
+- delete compiler preprocessor directives that are not supported in Arduino sketches
+- delete some unnessary include statements in ino files (other than main.ino)
 
 
 Test in Arduino IDE 1.8.19
