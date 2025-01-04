@@ -1,6 +1,5 @@
-platformIO2arduinoIDE.sh
-========================
-
+PlatformIO to Arduino IDE Converter
+===================================
 This script essentially prepares a C++ project (build with VScode and the PlatformIO plugin) for use in the Arduino IDE by adjusting file extensions and removing certain C++ specific elements that are not supported in Arduino sketches.
 
 PlatformIO structuur
