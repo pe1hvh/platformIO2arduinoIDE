@@ -4,11 +4,6 @@ projectName="frequentie-generator"
 projectDirSource="/home/$user/Documents/GitHub/frequency-generator-cpp" 
 projectDirTarget="/home/$user/Documents/GitHub/$projectName" 
 
-# Check if source directory is provided if not create destination directory
-#if [[ $projectDir != 0 ]]; then
-#    mkdir $projectDirTarget
-#fi
-
 # Copy all .cpp (other than main.cpp) and .h files
 cp $projectDirSource/lib/**/src/* $projectDirTarget
 cp $projectDirSource/include/* $projectDirTarget
@@ -18,10 +13,10 @@ for file in $projectDirTarget/*.cpp; do
     mv -- "$file" "${file%.cpp}.ino"
 done
 
-
 # Remove compilers directives
 sed -i '/#ifndef /d' $projectDirTarget/*h
 sed -i '/#define _/d' $projectDirTarget/*h
+sed -i '/#endif/d' $projectDirTarget/*h
 
 # Remove includes in ino files
 sed -i '/#include /d' $projectDirTarget/*.ino
