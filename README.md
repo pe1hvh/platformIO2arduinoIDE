@@ -6,6 +6,8 @@ While the source code in PlatformIO can be placed in several directories.
 
 PlatformIO structuur
 --------------------
+This script essentially prepares a C++ project (build with VScode and the PlatformIO plugin) for use in the Arduino IDE by adjusting file extensions and removing certain C++ specific elements that are not supported in Arduino sketches.
+
 This script is based on the standard structure of the PlatformIO project: see the following example:
 ~~~
 |--lib
