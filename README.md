@@ -1,12 +1,10 @@
 platformIO2arduinoIDE.sh
 ========================
 
-This bash script is build for converting the code build in VSCode with the PlatformIO pluging to sketches for the ArduinoIDE.
-While the source code in PlatformIO can be placed in several directories.
+This script essentially prepares a C++ project (build with VScode and the PlatformIO plugin) for use in the Arduino IDE by adjusting file extensions and removing certain C++ specific elements that are not supported in Arduino sketches.
 
 PlatformIO structuur
 --------------------
-This script essentially prepares a C++ project (build with VScode and the PlatformIO plugin) for use in the Arduino IDE by adjusting file extensions and removing certain C++ specific elements that are not supported in Arduino sketches.
 
 This script is based on the standard structure of the PlatformIO project: see the following example:
 ~~~
