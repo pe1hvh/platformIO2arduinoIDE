@@ -1,7 +1,7 @@
 #!/bin/bash
 read -p "Enter user: " user
-projectName="frequentie-generator"
-projectDirSource="/home/$user/Documents/GitHub/frequency-generator-cpp" 
+projectName="frequency-generator"
+projectDirSource="/home/$user/Documents/GitHub/$projectName-cpp" 
 projectDirTarget="/home/$user/Documents/GitHub/$projectName" 
 
 # Copy all .cpp (other than main.cpp) and .h files
